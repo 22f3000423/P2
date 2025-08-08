@@ -1,5 +1,3 @@
-# TDS Project 2
-
 🎯 Data Analyst Agent API
 Professional-grade FastAPI backend for automated data analysis and visualization
 
