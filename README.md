@@ -471,7 +471,7 @@ python main.py
 
 ## 📞 Contact & Support
 
-**Author**: [Tanish Aggarwal]  
+**Author**: Tanish Aggarwal  
 **GitHub**: [22f3000423](https://github.com/22f3000423/P2)  
 **Project**: IIT Madras Data Science Specialization  
 **License**: MIT License
