@@ -777,6 +777,25 @@ if __name__ == "__main__":
     )
 
 
+@app.get("/")
+async def root():
+    return {
+        "message": "Data Analyst Agent API is running", 
+        "status": "healthy",
+        "version": "2.0.0",
+        "cache_clear": CACHE_CLEAR_VERSION,
+        "endpoints": [
+            "GET /health - Health check",
+            "POST /analyze-wikipedia - Wikipedia analysis", 
+            "POST /analyze-court-data - Court data analysis",
+            "GET /docs - API documentation"
+        ]
+    }
+
+@app.head("/")
+async def head_root():
+    return {}
+
 @app.get("/api")
 @app.get("/api/")
 async def api_info():
