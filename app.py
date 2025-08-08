@@ -778,6 +778,7 @@ if __name__ == "__main__":
 
 
 @app.get("/api")
+@app.get("/api/")
 async def api_info():
     return {
         "message": "API root endpoint",
