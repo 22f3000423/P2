@@ -775,3 +775,16 @@ if __name__ == "__main__":
         reload=False,
         log_level="info"
     )
+
+
+@app.get("/api")
+async def api_info():
+    return {
+        "message": "API root endpoint",
+        "usage": "Send a POST request to /api/ with your task or file",
+        "examples": [
+            {"task": "Wikipedia highest-grossing films analysis"},
+            {"task": "Indian High Court judgments analysis"},
+            {"file_upload": "Upload CSV file for analysis"}
+        ]
+    }
